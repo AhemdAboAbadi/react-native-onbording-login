@@ -6,6 +6,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import LoginScreen from '../screens/LoginScreen';
 import OnboardingScreens from '../screens/OnboardingScreen';
 import SignUpScreen from '../screens/SignUpScreen';
+import SliderScreen from '../screens/SliderScreen';
 
 import {View} from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -63,6 +64,11 @@ export default function AuthStack() {
               </View>
             ),
           })}
+        />
+        <Stack.Screen
+          name="Slider"
+          component={SliderScreen}
+          options={{header: () => null}}
         />
       </Stack.Navigator>
     );

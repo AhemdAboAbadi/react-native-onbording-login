@@ -76,7 +76,7 @@ const SignUpScreen = ({navigation}) => {
       <TouchableOpacity
         style={styles.forgotButton}
         onPress={() => {
-          navigation.navigate('Login');
+          navigation.navigate('Slider');
         }}>
         <Text style={styles.navBtnText}>Have an account? Sign In</Text>
       </TouchableOpacity>
